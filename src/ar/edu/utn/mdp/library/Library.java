@@ -5,9 +5,10 @@ import java.util.Hashtable;
 
 public class Library {
 
+    public static final Library INSTANCE = new Library();
     private Hashtable<Integer, Book> books;
 
-    public Library() {
+    private Library() {
         this.books = new Hashtable<>();
     }
 
